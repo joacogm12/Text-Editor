@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "16.15.1"
+    "node": "16.15.1",
+    "npm": "8.11.0"
   },
   "main": "server.js",
   "scripts": {
@@ -11,9 +12,8 @@
     "start": "npm run build && cd server && node server.js",
     "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "cd client && npm run install",
-    "client": "cd client && npm start",
-    "heroku-prebuild": "npm install --dev"
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
